@@ -57,13 +57,13 @@ myaccinfo={
 }
 
 
-# 邮件信息
-subject = 'subject'
-# 纯文本邮件定义，邮件正文内容
-msg = MIMEText('main body text', 'plain', 'utf-8')
-# 定义发送人，接收人，以及描述信息（主题）
-msg['Subject'] = Header(subject, 'utf-8')
 
 
 if __name__=="__main__":
+    # 邮件信息
+    subject = 'subject'
+    # 纯文本邮件定义，邮件正文内容
+    msg = MIMEText('main body text', 'plain', 'utf-8')
+    # 定义发送人，接收人，以及描述信息（主题）
+    msg['Subject'] = Header(subject, 'utf-8')
     MySMTP(myaccinfo,msg)
