@@ -1,2 +1,2 @@
 # Python
-Build for Python
+自动邮件发送功能，用于自己给自己的邮箱发送邮件，目前只在163.com邮箱验证过
