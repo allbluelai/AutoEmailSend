@@ -33,7 +33,7 @@ def MySMTP(UserInfo,Message):
     if port==25:
         smtp=smtplib.SMTP(SmtpServer,port)
     elif(port==465 or port==994):
-        smtp = smtplib.SMTP_SSL(SmtpServer, port)  # 使用SSL加密登录，详见http://help.example.com/09/1223/14/5R7P3QI100753VB8.html
+        smtp = smtplib.SMTP_SSL(SmtpServer, port)  # 使用SSL加密登录，详见http://help.163.com/09/1223/14/5R7P3QI100753VB8.html
     else:
         print('SMTP协议端口号有误，请核对信息！')
     smtp.helo(SmtpServer)
